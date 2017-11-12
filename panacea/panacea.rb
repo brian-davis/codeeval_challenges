@@ -24,7 +24,6 @@
 # The number of components in virus and antivirus can be from 1 to 8.
 # The number of test cases is 40.
 
-puts ARGV[0]
 File.open(ARGV[0]).each_line do |line|
   hex, binary = line.split("|")
   hex = hex.split(" ")
